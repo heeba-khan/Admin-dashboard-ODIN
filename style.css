@@ -1,0 +1,356 @@
+*{
+    font-family: 'Roboto',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f7ede2;
+  }
+
+.container{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+}
+
+.header{
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 2/5;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 20px;
+    padding: 10px;
+    background-color: #f9f6f2;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.topnav{
+    display: grid;
+    grid-template-columns: 2fr auto auto;
+    grid-row:1/2;
+    align-items: center;
+}
+
+.search{
+    grid-column: 1/2;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+    max-width: 600px;
+}
+
+.topnav input[type=text]{
+    grid-column: 2/3;
+    padding: 6px;
+    border: none;
+    margin-right: 16px;
+    font-size: 16px;
+    border-radius: 15px;
+    background-color: #eddcd2;
+    margin-top: 8px;
+}
+
+#search-icon{
+    grid-column: 1/2;
+    width: 30px;
+    height: auto;
+    background-color: #f9f6f2;
+    align-self: self-end;
+    text-align: right;
+}
+
+#notif{
+    grid-column: 2/3;
+    border: none;
+    padding: 6px 10px;
+    margin-right: 16px;
+    margin-top: 8px;
+    background-color: #f9f6f2;
+    width: 50px;
+}
+
+.profile{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column: 3/4;
+    align-items: center;
+    gap: 15px;
+}
+
+#account-icon{
+    border: none;
+    background-color: #f6bd60;
+    width: 50px;
+    height: 50px;
+    grid-column: 1/2;
+    margin-top: 8px;
+    border-radius: 50%;
+}
+
+.user-name{
+    grid-column: 2/3;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    color: #121615;
+}
+
+.bottom-nav{
+    display: grid;
+    grid-row: 2/3;
+    align-items: center;
+    grid-template-columns: 2fr 1fr;
+}
+
+.account-overview{
+    display: grid;
+    grid-column: 1/2;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+}
+
+#account-icon-big{
+    border: none;
+    background-color: #f6bd60;
+    border-radius: 50%;
+    height: auto;
+    width: 60px;
+    grid-column: 1/2;
+}
+
+.user-greeting{
+    grid-column: 2/3;
+    text-align: left;
+    color: #121615;
+    font-weight: bold;
+}
+
+.greeting{
+    font-size: 12px;
+}
+
+.name{
+    font-size: 24px;
+}
+
+.profile-button{
+    border-radius: 30px;
+    width: 80px;
+    height: 40px;
+    background-color: #84a59d;
+    border: none;
+    color: #f9f6f2;
+    font-weight: 500;
+}
+
+#new{
+    grid-column: 2/3;
+}
+
+#upload{
+    grid-column: 3/4;
+}
+
+#share{
+    grid-column: 4/5;
+}
+
+
+.sidebar{
+    grid-column: 1/2;
+    grid-row: 1/4;
+    padding-top: 20px;
+    background-color:#84a59d ;
+    color: #f2e9e4;
+    }
+
+.sidebar-header{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    padding-bottom: 20px;
+}
+
+.dashboard-logo{
+    grid-column: 1/2;
+}
+
+.sidebar-title{
+    grid-column: 2/3;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.menu{
+    display: grid;
+    align-items: center;
+    padding-top: 10px;
+    grid-template-columns: 1fr;
+    margin-top: 0;
+    gap: 10px;
+}
+
+.menu-option{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+.menu-svgs{
+    grid-column: 1/2;
+    grid-row-start: 1;
+}
+
+.menu-name{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    grid-column: 2/3;
+}
+
+.projects{
+    grid-row-start: 2;
+    grid-column: 2/3;
+    grid-row: 2/4;
+    margin: 20px;
+}
+
+.cards{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit,minmax(300px,2fr));
+    gap: 20px;
+}
+
+.card{
+    text-align: left;
+    padding: 20px 20px 10px 10px;
+    background-color: #f9f6f2;
+    height: 160px;
+    border-radius: 10px;
+    border-left-width: 8px;
+    border-left-style: solid;
+    border-left-color: #f6bd60;
+    position: relative;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.subsection-header{
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.card-title{
+    font-weight: bold;
+}
+.card-content{
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.card-menu{
+    position: absolute;
+    top: 150px;
+    right: 20px;
+}
+
+.card-menu >svg{
+    padding: 0px 5px 0px 5px;
+}
+
+.announcements{
+    margin: 20px;
+    grid-row-start: 2;
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.announcement{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 250px;
+    padding: 30px 25px 30px 25px;
+    background-color: #f9f6f2;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.announcement-card{
+    text-align: left;
+}
+
+.annouce-card-header{
+    font-weight: bold;
+    color: #22223b;
+}
+
+.announcement-card>p:nth-of-type(2){
+    font-size: 14px;
+    color:  #4a4e69;
+}
+
+.row-border{
+    border-color: #c9ada7;
+    border-style: solid;
+    border-width: 0.5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.trending{
+    margin: 20px;
+    grid-row-start: 3;
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.trending-info{
+    display: grid;
+    align-items: center;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-color: #f9f6f2;
+    border-radius: 10px;
+    width: 250px;
+    gap: 10px;
+    /* padding: 30px; */
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.trending-card{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    padding: 10px;
+    height: 50px;
+    text-align: left;
+}
+
+.trending-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.text-section{
+    text-align: left;
+}
+
+#dog{
+    background-color: lightblue;
+}
+#cat{
+    background-color: rgb(245, 220, 233);
+}
+#penguin{
+    background-color: rgb(204, 255, 62);
+}
+#duck{
+    background-color: rgb(128, 226, 128);
+}
